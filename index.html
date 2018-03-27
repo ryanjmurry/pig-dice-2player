@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pig Dice</h1>
+        <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+        <ul>
+          <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+          <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+          <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+        </ul>
+        <p>The first player to score 100 or more points wins.</p>
+      </div>
+      <div class="row">
+        <div class="col">
+            <button id="user1-dice" class="btn-lg btn-danger">Player 1 Roll</button>
+            <button id="user1-hold" class="btn-lg btn-danger">Player 1 Hold</button>
+            <div id="result1">
+              <br>
+              <h1>Player 1 Current Roll: <span id="player1-current-roll"></span></h1>
+              <h1>Player 1 Turn Total: <span id="player1-turn-total"></span></h1>
+              <h1>Player 1 Total Score: <span id="player1-total-score"></span></h1>
+            </div>
+        </div>
+        <div class="col">
+            <button id="user2-dice" class="btn-lg btn-success">Player 2 Roll</button>
+            <button id="user2-hold" class="btn-lg btn-success">Player 2 Hold</button>
+            <div id="result2">
+              <br>
+              <h1>Player 2 Current Roll: <span id="player2-current-roll"></span></h1>
+              <h1>Player 2 Turn Total: <span id="player2-turn-total"></span></h1>
+              <h1>Player 2 Total Score: <span id="player2-total-score"></span></h1>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
